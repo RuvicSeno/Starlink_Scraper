@@ -1,0 +1,356 @@
+{
+  "responses_seen": 369,
+  "responses_captured": 27,
+  "response_status_counts": {
+    "200": 21,
+    "422": 1,
+    "403": 5
+  },
+  "sample_relevant_urls": [
+    "https://starlink.com/api/auth/auth/user",
+    "https://starlink.com/api/webagg/v3/accounts/user/584eef32-e450-4bfc-b01b-301d258793c5",
+    "https://starlink.com/api/accounts/v3/accounts/contact",
+    "https://starlink.com/api/auth/v1/current-user",
+    "https://starlink.com/api/accounts/v1/managed-accounts/settings",
+    "https://starlink.com/api/accounts/v2/accounts?accountNumber=ACC-2735603-74738-20",
+    "https://starlink.com/api/accounts/v1/accounts/service-line-numbers?Page=0&Limit=2",
+    "https://starlink.com/api/webagg/v1/public/outages",
+    "https://starlink.com/api/webagg/v1/global-environment/json",
+    "https://starlink.com/api/telemetryagg/v1/data-usage/account/ACC-2735603-74738-20/service-line/AST-2293597-46342-54/annotated",
+    "https://starlink.com/api/webagg/v2/accounts/service-line/AST-2293597-46342-54",
+    "https://starlink.com/api/webagg/v1/referrals/account-info/ACC-2735603-74738-20",
+    "https://starlink.com/api/carts/v1/carts/size",
+    "https://api.mapbox.com/styles/v1/mapbox/dark-v10?sdk=js-3.17.0&access_token=pk.eyJ1IjoidHJvYmluc29uc3giLCJhIjoiY2wwc3FtbDZ6MGQ4eTNpcnB3aWJoOTZ5cSJ9.hOU10BlP_T9MEeG_x_uzFw",
+    "https://starlink.com/api/accounts/v1/accounts/ACC-2735603-74738-20/active-suspension-categories",
+    "https://starlink.com/api/webagg/v1/public/payments/account/ACC-2735603-74738-20?limit=1&page=0&orderByDesc=true",
+    "https://starlink.com/api/webagg/v1/payment-method/default",
+    "https://starlink.com/api/accounts/v1/accounts/customer-details/obligations",
+    "https://starlink.com/api/accounts/v1/accounts/public/data-pool/",
+    "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2.json?secure&language=en-US&worldview=US&access_token=pk.eyJ1IjoidHJvYmluc29uc3giLCJhIjoiY2wwc3FtbDZ6MGQ4eTNpcnB3aWJoOTZ5cSJ9.hOU10BlP_T9MEeG_x_uzFw"
+  ],
+  "sample_response_shapes": [
+    {
+      "url": "https://starlink.com/api/auth/auth/user",
+      "status": 200,
+      "shape": [
+        "email",
+        "emailVerified",
+        "familyName",
+        "givenName",
+        "locale",
+        "name",
+        "subjectId",
+        "accountId",
+        "updatedAt",
+        "isSupportAgent"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v3/accounts/user/584eef32-e450-4bfc-b01b-301d258793c5",
+      "status": 200,
+      "shape": [
+        "email",
+        "emailVerified",
+        "familyName",
+        "middleName",
+        "givenName",
+        "locale",
+        "name",
+        "phoneNumber",
+        "subjectId",
+        "accountId"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v3/accounts/contact",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/auth/v1/current-user",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/managed-accounts/settings",
+      "status": 422,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v2/accounts?accountNumber=ACC-2735603-74738-20",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/accounts/service-line-numbers?Page=0&Limit=2",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/public/outages",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/global-environment/json",
+      "status": 200,
+      "shape": [
+        "availableLangs",
+        "substituteLangMap",
+        "isSandbox",
+        "captchaUrl",
+        "environment"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/telemetryagg/v1/data-usage/account/ACC-2735603-74738-20/service-line/AST-2293597-46342-54/annotated",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v2/accounts/service-line/AST-2293597-46342-54",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/referrals/account-info/ACC-2735603-74738-20",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/carts/v1/carts/size",
+      "status": 403,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v10?sdk=js-3.17.0&access_token=pk.eyJ1IjoidHJvYmluc29uc3giLCJhIjoiY2wwc3FtbDZ6MGQ4eTNpcnB3aWJoOTZ5cSJ9.hOU10BlP_T9MEeG_x_uzFw",
+      "status": 200,
+      "shape": [
+        "version",
+        "name",
+        "metadata",
+        "sources",
+        "center",
+        "zoom",
+        "sprite",
+        "glyphs",
+        "layers",
+        "visibility"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/accounts/ACC-2735603-74738-20/active-suspension-categories",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/public/payments/account/ACC-2735603-74738-20?limit=1&page=0&orderByDesc=true",
+      "status": 403,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/payment-method/default",
+      "status": 403,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/accounts/customer-details/obligations",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/accounts/public/data-pool/",
+      "status": 200,
+      "shape": [
+        "content",
+        "errors",
+        "warnings",
+        "information",
+        "isValid"
+      ]
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2.json?secure&language=en-US&worldview=US&access_token=pk.eyJ1IjoidHJvYmluc29uc3giLCJhIjoiY2wwc3FtbDZ6MGQ4eTNpcnB3aWJoOTZ5cSJ9.hOU10BlP_T9MEeG_x_uzFw",
+      "status": 200,
+      "shape": [
+        "attribution",
+        "bounds",
+        "cacheControl",
+        "center",
+        "constituents",
+        "fillzoom",
+        "format",
+        "language",
+        "language_options",
+        "mapbox_logo"
+      ]
+    }
+  ],
+  "selector_counts": {},
+  "parse_attempts": 473,
+  "records_added": 212,
+  "dropped_no_date": 472,
+  "dropped_bad_date": 0,
+  "dropped_zero_values": 1,
+  "dropped_duplicate_date": 0,
+  "dom_lines_count": 0,
+  "dom_gb_matches": 0,
+  "dom_date_matches": 0,
+  "dom_records_added": 0,
+  "captured_count_before_parse": 27,
+  "records_before_filter": 212,
+  "captured_payload_samples": [
+    {
+      "url": "https://starlink.com/api/auth/auth/user",
+      "status": 200,
+      "content_type": "application/json",
+      "sample": "{\"email\": \"fundamentalssystem@gmail.com\", \"emailVerified\": false, \"familyName\": \"Fundamentals\", \"givenName\": \"System\", \"locale\": \"en-US\", \"name\": \"System Fundamentals\", \"subjectId\": \"584eef32-e450-4bfc-b01b-301d258793c5\", \"accountId\": \"ACC-2735603-74738-20\", \"updatedAt\": 1779671121, \"isSupportAgent\": false, \"isSpacexEmployee\": false, \"enabled\": false, \"canManageClients\": false, \"roles\": [1003], \"employeeAccountPermissions\": [], \"permissions\": [{\"featureAccess\": 8, \"permission\": 0}, {\"featureAccess\": 9, \"permission\": 0}, {\"featureAccess\": 5, \"permission\": 0}, {\"featureAccess\": 1, \"permission\": 0}, {\"featureAccess\": 2, \"permission\": 0}, {\"featureAccess\": 13, \"permission\": 0}, {\"featureAccess\": 11, \"permission\": 0}, {\"featureAccess\": 18, \"permission\": 0}, {\"featureAccess\": 17, \"permission\": 0}]}"
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v3/accounts/user/584eef32-e450-4bfc-b01b-301d258793c5",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"email\": \"fundamentalssystem@gmail.com\", \"emailVerified\": true, \"familyName\": \"Fundamentals\", \"middleName\": null, \"givenName\": \"System\", \"locale\": \"en-US\", \"name\": \"System Fundamentals\", \"phoneNumber\": \"+639214739110\", \"subjectId\": \"584eef32-e450-4bfc-b01b-301d258793c5\", \"accountId\": null, \"updatedAt\": 1779671121, \"zoneInfo\": null, \"dateOfBirth\": null, \"isSupportAgent\": false, \"isSpacexEmployee\": false, \"enabled\": true, \"canManageClients\": false, \"maskedPhoneNumber\": \"*********9110\", \"groups\": [], \"roles\": null, \"employeeAccountPermissions\": [], \"employeePermission\": null, \"permissions\": []}"
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v3/accounts/contact",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": [{\"accountNumber\": \"ACC-2735603-74738-20\", \"accountName\": \"VAL PATRICK FABREGAS\", \"accountType\": \"Residential\", \"associatedProductCategory\": \"Consumer\", \"authorizedProviderCustomerAccountType\": null, \"authorizedProviderRequiresCustomersSignLOA\": false, \"authorizedProviderHandlesCustomerInvoicing\": false, \"status\": \"Active\", \"createDate\": \"2023-08-01T11:36:32.762501+00:00\", \"activationDate\": \"2023-08-01T11:36:32.760095+00:00\", \"reasonForCancellation\": null, \"authorizedProviderAccountNumber\": \"\", \"parentAccountNumber\": null, \"paymentTerms\": 0, \"corpEntityReferenceId\": \"CORP-136-PH\", \"defaultPaymentMethod\": \"CreditCard\", \"defaultPaymentProcessor\": 9, \"regionCode\": \"PH\", \"depositConversionDate\": null, \"importerCode\": null, \"importerBroker\": null, \"importerBrokerContactInfo\": null, \"taxDocumentId\": null, \"taxExemptionNumber\": null, \"verifiedTaxDetails\": null, \"merchantAccount\": \"StarlinkDepositsROW\", \"currencyCode\": \"PHP\", \"billingDayOfMonth\": 17, \"isBillingSuspended\": false, \"billingAddressId\": null, \"billingContactId\": null, \"previousDueDate\": \"2026-05-17T00:00:00+00:00\", \"nextDueDate\": \"2026-06-17T00:00:00+00:00\", \"tags\": [], \"tagIds\": [], \"dataSharingPreference\": 100, \"customerVerificationState\": \"NotApplicable\", \"customerVerificationDeadlineDate\": null, \"customerVerificationExpiryDate\": null, \"featureFlags\": {\"chatbotExperiment\": false, \"chatbotPreReleaseExperiment\""
+    },
+    {
+      "url": "https://starlink.com/api/auth/v1/current-user",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": {\"email\": \"fundamentalssystem@gmail.com\", \"emailVerified\": true, \"familyName\": \"Fundamentals\", \"middleName\": null, \"givenName\": \"System\", \"locale\": \"en-US\", \"name\": \"System Fundamentals\", \"phoneNumber\": \"+639214739110\", \"subjectId\": \"584eef32-e450-4bfc-b01b-301d258793c5\", \"accountId\": \"ACC-2735603-74738-20\", \"updatedAt\": 1779671121, \"zoneInfo\": null, \"dateOfBirth\": null, \"isSupportAgent\": false, \"isSpacexEmployee\": false, \"enabled\": true, \"canManageClients\": false, \"maskedPhoneNumber\": \"*********9110\", \"groups\": [], \"roles\": [1003], \"employeeAccountPermissions\": [], \"employeePermission\": null, \"permissions\": [{\"featureAccess\": 8, \"permission\": 0}, {\"featureAccess\": 9, \"permission\": 0}, {\"featureAccess\": 5, \"permission\": 0}, {\"featureAccess\": 1, \"permission\": 0}, {\"featureAccess\": 2, \"permission\": 0}, {\"featureAccess\": 13, \"permission\": 0}, {\"featureAccess\": 11, \"permission\": 0}, {\"featureAccess\": 18, \"permission\": 0}, {\"featureAccess\": 17, \"permission\": 0}]}, \"errors\": [], \"warnings\": [], \"information\": [], \"isValid\": true}"
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/managed-accounts/settings",
+      "status": 422,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": null, \"errors\": [{\"memberNames\": [], \"errorMessage\": \"settings_not_found\"}], \"warnings\": [], \"information\": [], \"isValid\": false}"
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v2/accounts?accountNumber=ACC-2735603-74738-20",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": {\"accountNumber\": \"ACC-2735603-74738-20\", \"accountName\": \"VAL PATRICK FABREGAS\", \"accountType\": \"Residential\", \"associatedProductCategory\": \"Consumer\", \"authorizedProviderCustomerAccountType\": null, \"authorizedProviderRequiresCustomersSignLOA\": false, \"authorizedProviderHandlesCustomerInvoicing\": false, \"status\": \"Active\", \"createDate\": \"2023-08-01T11:36:32.762501+00:00\", \"activationDate\": \"2023-08-01T11:36:32.760095+00:00\", \"reasonForCancellation\": null, \"authorizedProviderAccountNumber\": \"\", \"parentAccountNumber\": null, \"paymentTerms\": 0, \"corpEntityReferenceId\": \"CORP-136-PH\", \"defaultPaymentMethod\": \"CreditCard\", \"defaultPaymentProcessor\": 9, \"regionCode\": \"PH\", \"depositConversionDate\": null, \"importerCode\": null, \"importerBroker\": null, \"importerBrokerContactInfo\": null, \"taxDocumentId\": null, \"taxExemptionNumber\": null, \"verifiedTaxDetails\": null, \"merchantAccount\": \"StarlinkDepositsROW\", \"currencyCode\": \"PHP\", \"billingDayOfMonth\": 17, \"isBillingSuspended\": false, \"billingAddressId\": null, \"billingContactId\": null, \"previousDueDate\": \"2026-05-17T00:00:00+00:00\", \"nextDueDate\": \"2026-06-17T00:00:00+00:00\", \"tags\": [], \"tagIds\": [], \"dataSharingPreference\": 100, \"customerVerificationState\": \"NotApplicable\", \"customerVerificationDeadlineDate\": null, \"customerVerificationExpiryDate\": null, \"featureFlags\": {\"chatbotExperiment\": false, \"chatbotPreReleaseExperiment\":"
+    },
+    {
+      "url": "https://starlink.com/api/accounts/v1/accounts/service-line-numbers?Page=0&Limit=2",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": {\"pageIndex\": 0, \"limit\": 2, \"isLastPage\": true, \"results\": [\"AST-2293597-46342-54\"]}, \"errors\": [], \"warnings\": [], \"information\": [], \"isValid\": true}"
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/public/outages",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": null, \"errors\": [], \"warnings\": [], \"information\": [], \"isValid\": true}"
+    },
+    {
+      "url": "https://starlink.com/api/webagg/v1/global-environment/json",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"availableLangs\": [\"en-US\", \"en-150\", \"en-AI\", \"en-AS\", \"en-AL\", \"en-AM\", \"en-AZ\", \"en-AU\", \"en-BA\", \"en-BB\", \"en-BG\", \"en-BH\", \"en-BI\", \"en-BS\", \"en-BW\", \"en-CA\", \"en-CK\", \"en-DK\", \"en-DM\", \"en-EE\", \"en-FI\", \"en-FJ\", \"en-FM\", \"en-GD\", \"en-GE\", \"en-GB\", \"en-GH\", \"en-GI\", \"en-GM\", \"en-GN\", \"en-GU\", \"en-GY\", \"en-HN\", \"en-HR\", \"en-HU\", \"en-IE\", \"en-IS\", \"en-JM\", \"en-JO\", \"en-JP\", \"en-KE\", \"en-KI\", \"en-KR\", \"en-KY\", \"en-LK\", \"en-LT\", \"en-LV\", \"en-MD\", \"en-ME\", \"en-MK\", \"en-MP\", \"en-MT\", \"en-MV\", \"en-MW\", \"en-MY\", \"en-NA\", \"en-NG\", \"en-NR\", \"en-NU\", \"en-NZ\", \"en-PG\", \"en-PH\", \"en-PS\", \"en-PR\", \"en-QA\", \"en-RS\", \"en-RW\", \"en-SB\", \"en-SG\", \"en-SI\", \"en-SK\", \"en-SL\", \"en-SS\", \"en-SX\", \"en-SZ\", \"en-TC\", \"en-TK\", \"en-TO\", \"en-TT\", \"en-TV\", \"en-TZ\", \"en-UG\", \"en-UZ\", \"en-VI\", \"en-VU\", \"en-WS\", \"en-YE\", \"en-ZM\", \"en-ZW\", \"en-LS\", \"en-LR\", \"en-BT\", \"en-IL\", \"en-OM\", \"en-XK\", \"en-MN\", \"en-VC\", \"fr-FR\", \"fr-BE\", \"fr-BI\", \"fr-BJ\", \"fr-BL\", \"fr-CA\", \"fr-CD\", \"fr-CF\", \"fr-CH\", \"fr-DM\", \"fr-GF\", \"fr-GP\", \"fr-HT\", \"fr-LB\", \"fr-LU\", \"fr-MF\", \"fr-MG\", \"fr-MQ\", \"fr-NE\", \"fr-RE\", \"fr-RW\", \"fr-SC\", \"fr-SN\", \"fr-TD\", \"fr-TG\", \"fr-YT\", \"de-DE\", \"de-AT\", \"de-CH\", \"de-BE\", \"de-LU\", \"es-ES\", \"es-419\", \"es-AR\", \"es-CL\", \"es-CO\", \"es-CR\", \"es-DO\", \"es-EC\", \"es-GT\", \"es-HN\", \"es-MX\", \"es-PA\", \"es-PE\", \"es-PR\", \"es-PY\", \"es-SV\", \"es-UY\", \"it-IT\", \"it-CH\", \"el-GR\", \"el-CY\", \"pt-BR\", \"pt-PT\", \"pt-AO\", \"pt-CV\", \""
+    },
+    {
+      "url": "https://starlink.com/api/telemetryagg/v1/data-usage/account/ACC-2735603-74738-20/service-line/AST-2293597-46342-54/annotated",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": {\"dataBuckets\": [{\"name\": \"Residential Data\", \"style\": 0, \"color\": 0}], \"overageProductSummaryLine\": null, \"billingCyclesAnnotated\": [{\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restricted\": 0, \"unrestricted\": 0, \"pricePerGB\": 0, \"usageLimitGB\": 0, \"overageAmountGB\": 0, \"consumedAmountGB\": 482.05, \"overagePrice\": 0, \"productId\": null, \"dataOverageType\": 0, \"activeFrom\": \"2025-11-17T00:00:00+00:00\"}], \"startDate\": \"2025-11-17T00:00:00+00:00\", \"endDate\": \"2025-12-17T00:00:00+00:00\", \"totalAmountGB\": 482.05343983700004, \"dailyData\": [[17.486273079], [13.308194659], [6.946531524], [12.140051006], [10.101442714000001], [6.609595293], [17.297372183], [23.191345723], [13.307385523], [18.743551044], [13.595761925000001], [15.837246245], [11.482320088000002], [22.072843943], [12.31869134], [14.360615184], [14.594735749], [13.052808132], [15.154990534], [18.551238081], [19.606090488], [14.352544968], [10.178859849], [13.860284944], [9.752878917999999], [13.987016467], [22.320919485], [44.743026029], [33.21403803], [9.88478669]]}, {\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restri"
+    }
+  ],
+  "focused_payload_samples": [
+    {
+      "url": "https://starlink.com/api/telemetryagg/v1/data-usage/account/ACC-2735603-74738-20/service-line/AST-2293597-46342-54/annotated",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample": "{\"content\": {\"dataBuckets\": [{\"name\": \"Residential Data\", \"style\": 0, \"color\": 0}], \"overageProductSummaryLine\": null, \"billingCyclesAnnotated\": [{\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restricted\": 0, \"unrestricted\": 0, \"pricePerGB\": 0, \"usageLimitGB\": 0, \"overageAmountGB\": 0, \"consumedAmountGB\": 482.05, \"overagePrice\": 0, \"productId\": null, \"dataOverageType\": 0, \"activeFrom\": \"2025-11-17T00:00:00+00:00\"}], \"startDate\": \"2025-11-17T00:00:00+00:00\", \"endDate\": \"2025-12-17T00:00:00+00:00\", \"totalAmountGB\": 482.05343983700004, \"dailyData\": [[17.486273079], [13.308194659], [6.946531524], [12.140051006], [10.101442714000001], [6.609595293], [17.297372183], [23.191345723], [13.307385523], [18.743551044], [13.595761925000001], [15.837246245], [11.482320088000002], [22.072843943], [12.31869134], [14.360615184], [14.594735749], [13.052808132], [15.154990534], [18.551238081], [19.606090488], [14.352544968], [10.178859849], [13.860284944], [9.752878917999999], [13.987016467], [22.320919485], [44.743026029], [33.21403803], [9.88478669]]}, {\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restricted\": 0, \"unrestricted\": 0, \"pricePerGB\": 0, \"usageLimitGB\": 0, \"overageAmountGB\": 0, \"consumedAmountGB\": 546.51, \"overagePrice\": 0, \"productId\": null, \"dataOverageType\": 0, \"activeFrom\": \"2025-12-17T00:00:00+00:00\"}], \"startDate\": \"2025-12-17T00:00:00+00:00\", \"endDate\": \"2026-01-17T00:00:00+00:00\", \"totalAmountGB\": 546.505478711, \"dailyData\": [[18.50108881], [22.221914275], [14.405763068], [14.147822048], [24.98833773], [17.239871141000002], [20.406890359000002], [18.895186752], [12.046963023], [25.767574462], [22.548574749], [20.405787856], [19.504378718], [35.415201602], [23.789441172], [15.522662736], [17.912414348], [33.693400431], [26.114273468], [21.237701695000002], [20.629418898], [8.098446093], [19.954781727], [13.683606315999999], [15.549129633], [9.011979372], [7.099265274], [10.510167311], [8.308762836], [6.38373892], [2.5109338880000003]]}, {\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restricted\": 0, \"unrestricted\": 0, \"pricePerGB\": 0, \"usageLimitGB\": 0, \"overageAmountGB\": 0, \"consumedAmountGB\": 218.04, \"overagePrice\": 0, \"productId\": null, \"dataOverageType\": 0, \"activeFrom\": \"2026-01-17T00:00:00+00:00\"}], \"startDate\": \"2026-01-17T00:00:00+00:00\", \"endDate\": \"2026-02-17T00:00:00+00:00\", \"totalAmountGB\": 218.03832859399995, \"dailyData\": [[12.456681531], [5.86662837], [7.364195405], [7.3277513579999995], [6.533994505], [14.345516894000001], [8.694565454000001], [12.071834201000001], [13.356644448], [7.901013621000001], [12.151333603], [5.940856445], [7.090575025], [8.774589393], [14.294508192999999], [4.630240819], [6.857662230000001], [5.742746735], [4.361197476], [4.029718989], [3.0430167089999998], [9.119861849000001], [2.3732309039999997], [0.8849552829999999], [1.217558312], [7.832342162], [4.118984236], [8.814152455], [4.1859029240000005], [2.3850695450000003], [4.27099952]]}, {\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restricted\": 0, \"unrestricted\": 0, \"pricePerGB\": 0, \"usageLimitGB\": 0, \"overageAmountGB\": 0, \"consumedAmountGB\": 91.21, \"overagePrice\": 0, \"productId\": null, \"dataOverageType\": 0, \"activeFrom\": \"2026-02-17T00:00:00+00:00\"}], \"startDate\": \"2026-02-17T00:00:00+00:00\", \"endDate\": \"2026-03-17T00:00:00+00:00\", \"totalAmountGB\": 91.21203637299999, \"dailyData\": [[2.567567606], [7.13055457], [3.878634534], [4.998598503], [2.079006415], [4.958014205], [1.9108147240000002], [5.093380485], [3.409195436], [2.9572959], [4.015278144], [3.896338654], [2.522802704], [6.659457926999999], [2.3177222239999997], [2.377118745], [4.612500595999999], [2.177162016], [3.507094768], [2.799064638], [3.199484756], [2.246918936], [1.2531587929999999], [1.890095451], [3.466336574], [0.902562904], [1.862059414], [2.523816751]]}, {\"dataUsageSummaryLines\": [{\"isOptedIntoOverage\": false, \"name\": \"\", \"description\": \"\", \"dataBucketIndex\": 0, \"isoCurrencyCode\": \"PHP\", \"overageLineDeactivatedDate\": null, \"summaryLineType\": 6, \"restricted\": 0, \"unrestricted\": 0, \"pricePerGB\": 0, \"usageLimitGB\": 0, \"overageAmountGB\": 0, \"consumedAmountGB\": 450.67, \"overagePrice\": 0, \"productId\": null, \"dataOverageType\": 0, \"activeFrom\": \"2026-03-17T00:00:00+00:00\"}], \"startDate\": \"2026-03-17T00:00:00+00:00\", \"endDate\": \"2026-04-17T00:00:00+00:00\", \"totalAmountGB\": 450.6678034920001, \"dailyData\": [[5.7841628279999995], [5.5124074069999995], [5.96781261], [2.59380"
+    }
+  ]
+}

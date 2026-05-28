@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlink Usage Dashboard</title>
+    <meta name="description" content="Interactive dashboard for monitoring Starlink satellite internet data usage, with daily and monthly analytics.">
+    <meta property="og:title" content="Starlink Usage Dashboard">
+    <meta property="og:description" content="Monitor your Starlink data usage with interactive charts and detailed analytics.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+
+        <!-- ═══════ Header ═══════ -->
+        <header class="header">
+            <div class="header-brand">
+                <div class="header-logo">✦</div>
+                <div>
+                    <h1 class="header-title">Starlink Usage Dashboard</h1>
+                    <div class="header-subtitle">Data usage analytics & monitoring</div>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="status-badge" id="status-badge" data-status="idle">
+                    <span class="status-dot"></span>
+                    <span id="status-text">Idle</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ═══════ Controls Bar ═══════ -->
+        <div class="controls-bar">
+            <div class="controls-left">
+                <button class="btn btn-primary" id="btn-start-scrape">🛰️ Start Scraping</button>
+                <button class="btn" id="btn-stop-scrape" style="display:none">⏹ Stop</button>
+                <button class="btn" id="btn-refresh" title="Refresh data">🔄 Refresh</button>
+                <span class="scrape-progress" id="scrape-progress"></span>
+            </div>
+            <div class="controls-right">
+                <select class="month-select" id="month-select">
+                    <option value="">All Months</option>
+                </select>
+                <button class="btn" id="btn-export">📥 Export CSV</button>
+            </div>
+        </div>
+
+        <!-- ═══════ Overview Cards ═══════ -->
+        <section class="overview-grid compact" aria-label="Usage overview">
+            <div class="overview-card">
+                <div class="card-header">
+                    <span class="card-label">Total Residential Data</span>
+                    <div class="card-icon download">↓</div>
+                </div>
+                <div class="card-value" id="card-residential">0.00<span class="card-unit">GB</span></div>
+                <div class="card-detail" id="card-residential-detail">No data yet</div>
+            </div>
+
+            <div class="overview-card">
+                <div class="card-header">
+                    <span class="card-label">Peak Usage</span>
+                    <div class="card-icon peak">⚡</div>
+                </div>
+                <div class="card-value" id="card-peak">0.00<span class="card-unit">GB</span></div>
+                <div class="card-detail" id="card-peak-detail">No data yet</div>
+            </div>
+        </section>
+
+        <!-- ═══════ Charts ═══════ -->
+        <section aria-label="Usage charts">
+            <div class="charts-grid">
+                <div class="chart-card full-width">
+                    <div class="chart-header">
+                        <h2 class="chart-title">📈 Daily Usage</h2>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="daily-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card full-width">
+                    <div class="chart-header">
+                        <h2 class="chart-title">📊 Monthly Comparison</h2>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="monthly-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ Data Table ═══════ -->
+        <section class="table-section" aria-label="Usage data table">
+            <h2 class="section-title">📋 Detailed Usage Records</h2>
+            <div class="table-card">
+                <div class="table-toolbar">
+                    <div class="table-search">
+                        <span class="table-search-icon">🔍</span>
+                        <input type="text" id="table-search" placeholder="Search by date, month, value...">
+                    </div>
+                    <span class="table-meta" id="table-meta">No records</span>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th data-col="date">Date <span class="sort-icon">▼</span></th>
+                                <th data-col="residential_gb">Residential Data (GB) <span class="sort-icon">▲</span></th>
+                                <th data-col="month">Month <span class="sort-icon">▲</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr><td colspan="3" class="empty-state" style="padding:40px">
+                                <div class="empty-state-icon">📊</div>
+                                <div class="empty-state-title">No data available</div>
+                                <div class="empty-state-text">Click "Start Scraping" to fetch your Starlink usage data.</div>
+                            </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pagination">
+                    <span class="pagination-info" id="pagination-info"></span>
+                    <div class="pagination-controls" id="pagination-controls"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ Footer ═══════ -->
+        <footer class="footer">
+            Starlink Usage Dashboard &middot; Data scraped from your Starlink account
+        </footer>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts (order matters: api → charts → table → app) -->
+    <script src="/js/api.js"></script>
+    <script src="/js/charts.js"></script>
+    <script src="/js/table.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
